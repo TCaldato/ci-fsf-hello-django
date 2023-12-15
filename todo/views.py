@@ -24,3 +24,8 @@ def add_item(request):
         'form': form
     }
     return render(request, 'todo/add_item.html', context)
+
+
+def edit_item(request, item_id):
+    item = get.object
+    return render(request, "todo/edit_item.html")
